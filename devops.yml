@@ -16,6 +16,22 @@ steps:
     customCommand: run build -- --prod
     workingDir: ./
 
+- task: Npm@1
+  displayName: 'Test Angular'
+  inputs:
+    command: custom
+    customCommand: run test
+    workingDir: ./
+
+- task: PublishCodeCoverageResult@1
+  displayName: 'Publish code coverage results'
+  condition: succeededOrFailed()
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: 'coverage/cobertura-coverage.xml'
+    repositoryDirectory: coverage
+    failIfCoverageEmpty: true
+
 - task: PublishPipelineArtifact@0
   inputs:
     artifactName: 'angular'
