@@ -1,0 +1,22 @@
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+
+- task: Npm@1
+  displayName: 'Node Package Manager'
+  inputs:
+    command: install
+    workingDir: ./
+
+- task: Npm@1
+  display: 'Build Angular'
+  inputs:
+    command: custom
+    customCommand: run build -- --prod
+    workingDir: ./
+
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'angular'
+    targetPath: 'dist'
