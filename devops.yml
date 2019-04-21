@@ -20,3 +20,19 @@ steps:
   inputs:
     artifactName: 'angular'
     targetPath: 'dist'
+
+- task: Npm@1
+  displayName: 'Test Angular'
+  inputs:
+    command: custom
+    customCommand: run headless
+    workingDir: ./
+
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage results'
+  condition: succeededOrFailed()
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: 'coverage/cobertura-coverage.xml'
+    repositoryDirectory: coverage
+    failIfCoverageEmpty: true
