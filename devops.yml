@@ -28,7 +28,7 @@ steps:
     customCommand: run test
     workingDir: ./
 
-- task: PublishCodeCoverageResult@1
+- task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage results'
   condition: succeededOrFailed()
   inputs:
