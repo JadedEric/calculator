@@ -10,7 +10,7 @@ steps:
     workingDir: ./
 
 - task: Npm@1
-  display: 'Build Angular'
+  displayName: 'Build Angular'
   inputs:
     command: custom
     customCommand: run build -- --prod
