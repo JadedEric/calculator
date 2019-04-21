@@ -25,7 +25,7 @@ steps:
   displayName: 'Test Angular'
   inputs:
     command: custom
-    customCommand: run test
+    customCommand: run headless
     workingDir: ./
 
 - task: PublishCodeCoverageResults@1
