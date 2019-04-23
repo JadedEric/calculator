@@ -1,11 +1,9 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 75.0.3738 (Windows 10.0.0)" package="" timestamp="2019-04-21T15:13:08" id="0" hostname="DESKTOP-623RGRM" tests="3" errors="0" failures="0" time="0.107">
+<testsuite name="HeadlessChrome 75.0.3738 (Windows 10.0.0)" package="" timestamp="2019-04-23T06:21:37" id="0" hostname="DESKTOP-623RGRM" tests="1" errors="0" failures="0" time="0.005">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"/>
   </properties>
-  <testcase name="AppComponent should create the app" time="0.076" classname="HeadlessChrome_75_0_3738_(Windows_10_0_0).AppComponent"/>
-  <testcase name="AppComponent should have as title 'Calculator'" time="0.016" classname="HeadlessChrome_75_0_3738_(Windows_10_0_0).AppComponent"/>
-  <testcase name="AppComponent should render title in a h1 tag" time="0.015" classname="HeadlessChrome_75_0_3738_(Windows_10_0_0).AppComponent"/>
+  <testcase name="Arithmetic should calculate a positive addition" time="0.005" classname="HeadlessChrome_75_0_3738_(Windows_10_0_0).Arithmetic"/>
   <system-out>
     <![CDATA[
 ]]>
