@@ -1,32 +1,31 @@
 export class Arithmetic {
     /**
-     * 
+     * the value of the arithmetic operation
      */
-    public value: string = '';
+    public value = '';
 
     /**
-     * 
+     * the arithmetic presentation
      */
-    public arithmetic: number = 0;
+    public arithmetic = 0;
 
     /**
-     * 
+     * the operand used in the arithmetic operation
      */
-    public operand: string = '';   
+    public operand = '';
 
-    constructor() {        
+    constructor() {
     }
 
     /**
      * calculates the answer of an arithmetic equation
-     * 
      * @returns number
      */
     action(): number {
 
-        let answer: number = 0;
+        let answer = 0;
 
-        switch (this.operand) {            
+        switch (this.operand) {
             case '-': {
                 answer = this.arithmetic - Number(this.value);
                 break;
@@ -50,5 +49,5 @@ export class Arithmetic {
         }
 
         return answer;
-    }    
+    }
 }

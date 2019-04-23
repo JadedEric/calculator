@@ -1,20 +1,20 @@
-import { Arithmetic } from "./arithmetic";
+import { Arithmetic } from './arithmetic';
 import { Command } from './command';
 import { Key } from './key';
 import { KeyEnum } from './key.enum';
 
 describe('Arithmetic', () => {
 
-    beforeEach(()=> {        
+    beforeEach(() => {
     });
 
     it('should calculate a positive addition', () => {
 
-        let arithmetic: Arithmetic = new Arithmetic();
-        let three = Command.init(arithmetic, new Key('3', KeyEnum.Number));
-        let addition = Command.init(arithmetic, new Key('+', KeyEnum.Operation));
-        let nine = Command.init(arithmetic, new Key('9', KeyEnum.Number));
-        let equals = Command.init(arithmetic, new Key('=', KeyEnum.Equals));
+        const arithmetic: Arithmetic = new Arithmetic();
+        const three = Command.init(arithmetic, new Key('3', KeyEnum.Number));
+        const addition = Command.init(arithmetic, new Key('+', KeyEnum.Operation));
+        const nine = Command.init(arithmetic, new Key('9', KeyEnum.Number));
+        const equals = Command.init(arithmetic, new Key('=', KeyEnum.Equals));
 
         three.parse();
         addition.parse();

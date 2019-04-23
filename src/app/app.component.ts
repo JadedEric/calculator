@@ -10,6 +10,6 @@ export class AppComponent extends CalculatorBase {
   title = 'Calculator';
 
   constructor() {
-    super();    
+    super();
   }
 }
