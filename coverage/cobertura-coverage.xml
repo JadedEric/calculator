@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="6" lines-covered="6" line-rate="1" branches-valid="0" branches-covered="0" branch-rate="1" timestamp="1555859588192" complexity="0" version="0.1">
+<coverage lines-valid="78" lines-covered="61" line-rate="0.7820999999999999" branches-valid="7" branches-covered="5" branch-rate="0.7143" timestamp="1556000497740" complexity="0" version="0.1">
   <sources>
-    <source>D:\dev\Github\calculator</source>
+    <source>D:\Dev\Github\calculator</source>
   </sources>
   <packages>
     <package name="src" line-rate="1" branch-rate="1">
@@ -24,20 +24,254 @@
         </class>
       </classes>
     </package>
-    <package name="src.app" line-rate="1" branch-rate="1">
+    <package name="src.app.arithmetic" line-rate="0.75" branch-rate="0.8">
       <classes>
-        <class name="app.component.ts" filename="src\app\app.component.ts" line-rate="1" branch-rate="1">
+        <class name="arithmetic.ts" filename="src\app\arithmetic\arithmetic.ts" line-rate="0.5556" branch-rate="1">
           <methods>
-            <method name="AppComponent" hits="3" signature="()V">
+            <method name="(anonymous_0)" hits="1" signature="()V">
               <lines>
-                <line number="3" hits="3"/>
+                <line number="1" hits="1"/>
+              </lines>
+            </method>
+            <method name="Arithmetic" hits="1" signature="()V">
+              <lines>
+                <line number="17" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="2" signature="()V">
+              <lines>
+                <line number="25" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="1" branch="false"/>
-            <line number="9" hits="3" branch="false"/>
+            <line number="1" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
             <line number="10" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="25" hits="1" branch="false"/>
+            <line number="27" hits="2" branch="false"/>
+            <line number="31" hits="0" branch="false"/>
+            <line number="32" hits="0" branch="false"/>
+            <line number="35" hits="0" branch="false"/>
+            <line number="36" hits="0" branch="false"/>
+            <line number="39" hits="0" branch="false"/>
+            <line number="40" hits="0" branch="false"/>
+            <line number="43" hits="0" branch="false"/>
+            <line number="44" hits="0" branch="false"/>
+            <line number="47" hits="2" branch="false"/>
+            <line number="48" hits="2" branch="false"/>
+            <line number="52" hits="2" branch="false"/>
+            <line number="54" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="command.ts" filename="src\app\arithmetic\command.ts" line-rate="0.75" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="11" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="4" signature="()V">
+              <lines>
+                <line number="13" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="16" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="22" hits="0" branch="false"/>
+            <line number="25" hits="0" branch="false"/>
+            <line number="29" hits="2" branch="false"/>
+            <line number="33" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="key.enum.ts" filename="src\app\arithmetic\key.enum.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="1" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="key.ts" filename="src\app\arithmetic\key.ts" line-rate="1" branch-rate="0.5">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="3" hits="1"/>
+              </lines>
+            </method>
+            <method name="Key" hits="4" signature="()V">
+              <lines>
+                <line number="7" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="1" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="7" hits="8" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="8" hits="4" branch="false"/>
+            <line number="9" hits="4" branch="false"/>
+            <line number="12" hits="4" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.app.commands" line-rate="0.8" branch-rate="0.5">
+      <classes>
+        <class name="clear-command.ts" filename="src\app\commands\clear-command.ts" line-rate="0.4286" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="7" hits="1"/>
+              </lines>
+            </method>
+            <method name="ClearCommand" hits="0" signature="()V">
+              <lines>
+                <line number="9" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="15" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="1" branch="false"/>
+            <line number="9" hits="0" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="17" hits="0" branch="false"/>
+            <line number="18" hits="0" branch="false"/>
+            <line number="19" hits="0" branch="false"/>
+            <line number="21" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="equals-command.ts" filename="src\app\commands\equals-command.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="7" hits="1"/>
+              </lines>
+            </method>
+            <method name="EqualsCommand" hits="1" signature="()V">
+              <lines>
+                <line number="9" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="1" signature="()V">
+              <lines>
+                <line number="15" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="invert-command.ts" filename="src\app\commands\invert-command.ts" line-rate="0.6" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="7" hits="1"/>
+              </lines>
+            </method>
+            <method name="InvertCommand" hits="0" signature="()V">
+              <lines>
+                <line number="9" hits="0"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="0" signature="()V">
+              <lines>
+                <line number="15" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="1" branch="false"/>
+            <line number="9" hits="0" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="17" hits="0" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="push-command.ts" filename="src\app\commands\push-command.ts" line-rate="0.8571" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="7" hits="1"/>
+              </lines>
+            </method>
+            <method name="PushCommand" hits="2" signature="()V">
+              <lines>
+                <line number="9" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="2" signature="()V">
+              <lines>
+                <line number="15" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="1" branch="false"/>
+            <line number="9" hits="2" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="17" hits="2" branch="false"/>
+            <line number="18" hits="2" branch="false"/>
+            <line number="21" hits="0" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="set-command.ts" filename="src\app\commands\set-command.ts" line-rate="1" branch-rate="0.5">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="7" hits="1"/>
+              </lines>
+            </method>
+            <method name="SetCommand" hits="1" signature="()V">
+              <lines>
+                <line number="9" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="1" signature="()V">
+              <lines>
+                <line number="15" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="24" hits="1" branch="false"/>
+            <line number="26" hits="1" branch="false"/>
           </lines>
         </class>
       </classes>
